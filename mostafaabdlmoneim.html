@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mostafa Abdlmoneim | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background-color: #0d0d0d;
+      color: #f5f5dc; /* beige */
+      line-height: 1.6;
+      background-image: linear-gradient(45deg, #0d0d0d 25%, #1a1a1a 25%, #1a1a1a 50%, #0d0d0d 50%, #0d0d0d 75%, #1a1a1a 75%, #1a1a1a 100%);
+      background-size: 40px 40px;
+    }
+    header {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(13, 13, 13, 0.95);
+      text-align: center;
+      padding: 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+    header img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 3px solid #d4af37;
+      margin-bottom: 20px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+    header img:hover {
+      transform: scale(1.05);
+    }
+    header h1 {
+      font-size: 3rem;
+      color: #d4af37; /* gold */
+      margin-bottom: 10px;
+      transition: color 0.3s ease;
+    }
+    header h1:hover {
+      color: #fff;
+    }
+    header h2 {
+      font-size: 1.5rem;
+      color: #f5f5dc;
+      animation: slideIn 1.5s ease-in-out;
+    }
+    section {
+      padding: 60px 15%;
+      animation: fadeUp 1s ease-in-out;
+    }
+    section h2 {
+      color: #d4af37;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #d4af37;
+      display: inline-block;
+      padding-bottom: 5px;
+      transition: color 0.3s ease;
+    }
+    section h2:hover {
+      color: #fff;
+    }
+    p {
+      margin-bottom: 15px;
+      font-size: 1.1rem;
+    }
+    .whatido {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.7);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(212, 175, 55, 0.6);
+    }
+    .card h3 {
+      color: #d4af37;
+      margin-bottom: 10px;
+    }
+    .experience {
+      background: #111;
+      border-left: 4px solid #d4af37;
+      padding: 15px;
+      margin-bottom: 20px;
+      transition: transform 0.3s ease;
+    }
+    .experience:hover {
+      transform: scale(1.02);
+    }
+    footer {
+      background: #0d0d0d;
+      text-align: center;
+      padding: 30px 0;
+      border-top: 1px solid #333;
+    }
+    footer a {
+      color: #f5f5dc; /* same as normal text */
+      text-decoration: none;
+      font-weight: normal;
+    }
+    #contact a {
+      color: #f5f5dc; /* email & phone same color as text */
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    #contact a:hover {
+      color: #d4af37;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideIn {
+      from { transform: translateY(-20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes fadeUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    header {
+  background: 
+    repeating-linear-gradient(
+      45deg,
+      rgba(255, 215, 0, 0.15),
+      rgba(255, 215, 0, 0.15) 2px,
+      transparent 2px,
+      transparent 40px
+    ),
+    linear-gradient(to bottom, #000000, #0a0a0a);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <img src="mostafa.jpg" alt="Mostafa Abdlmoneim Photo">
+    <h1>Mostafa Abdlmoneim</h1>
+    <h2>Junior Penetration Tester</h2>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a student at the Faculty of Artificial Intelligence, Cyber Security Department, currently in level 4 with an expected graduation year of 2026.</p>
+    <p>My passion lies in cybersecurity, especially penetration testing for both networks and web applications. I am skilled in identifying vulnerabilities, simulating real-world attack scenarios, and suggesting security improvements.</p>
+    <p>I enjoy working with tools and frameworks that help me analyze systems, secure applications, and build safer digital environments. I am constantly learning new methods to improve my skills in ethical hacking and security research.</p>
+  </section>
+
+  <!-- What I Do Section -->
+  <section id="whatido">
+    <h2>What I Do</h2>
+    <div class="whatido">
+      <div class="card">
+        <h3>Network Penetration Testing</h3>
+        <p>I specialize in assessing network infrastructure for potential vulnerabilities. This includes analyzing open ports, testing firewall rules, identifying misconfigurations, and simulating attacks to evaluate the overall resilience of the network.</p>
+      </div>
+      <div class="card">
+        <h3>Web Penetration Testing</h3>
+        <p>I perform web application penetration testing to uncover security issues such as SQL injection, XSS, authentication flaws, and insecure configurations. My goal is to help organizations secure their web platforms against modern threats.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="experience">
+      <h3>Frontend Developer at Kan, Cairo (2023 - Present)</h3>
+      <p>I have been working as a Frontend Developer at Kan company in Cairo, where I collaborated on various projects and designs. My work included building responsive user interfaces, improving performance, and ensuring great user experiences. I contributed to multiple client-based projects and design implementations that enhanced the company’s digital presence.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:moustafaelkhdrawy4@gmail.com">moustafaelkhdrawy4@gmail.com</a></p>
+    <p>Phone: <a href="tel:+201090194647">01090194647</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mostafa Abdlmoneim | Built with passion for Cybersecurity</p>
+  </footer>
+
+</body>
+</html>
